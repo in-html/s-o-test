@@ -11,13 +11,13 @@ const ButtonStyled = styled.button`
 	padding: 10px 30px;
 `;
 
-const Button = ({ label, onSaveText }) => {
-	return <ButtonStyled onClick={onSaveText}>{label}</ButtonStyled>;
+const Button = ({ label, onSend }) => {
+	return <ButtonStyled onClick={onSend}>{label}</ButtonStyled>;
 };
 
 Button.propTypes = {
 	label: PropTypes.string.isRequired,
-	onSaveText: PropTypes.func.isRequired
+	onSend: PropTypes.func.isRequired
 };
 
 export default Button;

@@ -23,6 +23,9 @@ module.exports = {
 			}
 		]
 	},
+  devServer: {
+    historyApiFallback: true,
+  },
 	plugins: [
 		new HtmlWebPackPlugin({
       favicon: './public/favicon.ico',
