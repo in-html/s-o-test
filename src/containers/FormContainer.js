@@ -26,6 +26,13 @@ class FormContainer extends Component {
 		};
 	}
 
+	componentWillReceiveProps(nextProps){
+    const { textInput } = nextProps;
+    const { text } = this.state;
+	  if(textInput !== '' && textInput !== text)
+	  this.setState({text: textInput});
+  }
+
 	handleChangeTextInput = event => {
 		const { textInput, dispatch } = this.props;
 		if (textInput !== '') {

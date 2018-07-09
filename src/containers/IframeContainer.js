@@ -28,10 +28,6 @@ class IframeContainer extends Component {
 		}
 	};
 
-	shouldComponentUpdate() {
-		return false;
-	}
-
 	render() {
 		return (
 			<div>
